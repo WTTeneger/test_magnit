@@ -68,7 +68,7 @@ class tokinService():
             status = 'REFRESH'
 
  
-        print(((tokinDecode['payload']['time_create'] + tplas) - time.time()))
+        # print(((tokinDecode['payload']['time_create'] + tplas) - time.time()))
         # print(status)
         if(((tokinDecode['payload']['time_create'] + tplas) - time.time())>0):
             return(True,'live')
